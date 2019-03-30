@@ -2,7 +2,7 @@
 
 Official Be Cash 2019 Conference Site
 
-Staging at [https://bcash-site.herokuapp.com](https://bcash-site.herokuapp.com)
+Staging at [https://becash-site.herokuapp.com/](https://becash-site.herokuapp.com/)
 
 ### Event Description
 Here is some information about the Be Cash 2019 Conference!  It's right here in the words I'm giving you right now.  Look, there's also a link to the live site powered by the code in this repo!
