@@ -1,0 +1,137 @@
+/*Mixins*/
+.background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*Font Mixins*/
+.body-font() {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/*Global CSS*/
+body {
+  .body-font();
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  .body-font();
+  font-weight: 700;
+}
+
+
+/*Components*/
+header.masthead {
+  position: relative;
+  background-color: @gray-800;
+  background: url('/images/yeller.jpg') no-repeat;
+  background-position: 80% 30%; 
+  /*.background-cover();*/
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  .overlay {
+    position: absolute;
+    background-color: rgba(255,153,0,.9);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  @media (min-width: 768px) {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .hero-logo {
+    width:450px;
+    height:auto;
+  }
+}
+
+
+.showcase {
+  .showcase-text {
+    padding: 3rem;
+  }
+  .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+  }
+  @media (min-width: 768px) {
+    .showcase-text {
+      padding: 7rem;
+    }
+  }
+}
+
+
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  .features-icons-item {
+    max-width: 20rem;
+    .features-icons-icon {
+      height: 7rem;
+      i {
+        font-size: 4.5rem;
+      }
+    }
+    &:hover {
+      .features-icons-icon {
+        i {
+          font-size: 5rem;
+        }
+      }
+    }
+  }
+}
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  .testimonial-item {
+    max-width: 18rem;
+    img {
+      max-width: 12rem;
+      box-shadow: 0px 5px 5px 0px @gray-500;
+    }
+  }
+}
+
+
+.call-to-action {
+  position: relative;
+  background-color: @gray-800;
+  background: url('/images/yeller.jpg') no-repeat center center;
+  .background-cover();
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  .overlay {
+    position: absolute;
+    background-color: @gray-900;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+  }
+}
+
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
