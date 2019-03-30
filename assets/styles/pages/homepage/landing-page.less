@@ -6,9 +6,18 @@
   background-size: cover;
 }
 
-/*Font Mixins*/
 .body-font() {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.testimonial-item() {
+  .testimonial-item {
+    max-width: 18rem;
+    img {
+      max-width: 12rem;
+      box-shadow: 0px 5px 5px 0px @gray-500;
+    }
+  }
 }
 
 /*Global CSS*/
@@ -80,8 +89,8 @@ header.masthead {
 
 
 .features-icons {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 6rem;
+  padding-bottom: 4rem;
   .features-icons-item {
     max-width: 20rem;
     .features-icons-icon {
@@ -100,16 +109,32 @@ header.masthead {
   }
 }
 
+.sponsors-icons {
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+  .features-icons-item {
+    max-width: 20rem;
+    .features-icons-icon {
+      height: 7rem;
+      i {
+        font-size: 4.5rem;
+      }
+    }
+    &:hover {
+      .features-icons-icon {
+        i {
+          font-size: 5rem;
+        }
+      }
+    }
+  }
+  .testimonial-item();
+}
+
 .testimonials {
   padding-top: 7rem;
   padding-bottom: 7rem;
-  .testimonial-item {
-    max-width: 18rem;
-    img {
-      max-width: 12rem;
-      box-shadow: 0px 5px 5px 0px @gray-500;
-    }
-  }
+  .testimonial-item();
 }
 
 
